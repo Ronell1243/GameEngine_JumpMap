@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
     public int maxHp = 3;
     public int currentHp;
     public Slider hpSlider;    //플레이어만 연결
+   // public static int killCount    //모든 Health가 같이 쓰는 값 하나
 
     void Start()
     {
@@ -46,6 +47,7 @@ public class Health : MonoBehaviour
         }
         else
         {
+           // killCount++;
             Destroy(gameObject);
         }
     }
